@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareApi", "SquareApi.csproj", "{B575010F-7C98-8A43-46F8-BF1E2BB7FC77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B575010F-7C98-8A43-46F8-BF1E2BB7FC77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B575010F-7C98-8A43-46F8-BF1E2BB7FC77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B575010F-7C98-8A43-46F8-BF1E2BB7FC77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B575010F-7C98-8A43-46F8-BF1E2BB7FC77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92608D81-893C-4AD5-B76C-A32785ACE4B7}
+	EndGlobalSection
+EndGlobal

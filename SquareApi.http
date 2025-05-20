@@ -1,0 +1,42 @@
+@SquareApi_HostAddress = http://localhost:5051
+
+GET {{SquareApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{SquareApi_HostAddress}}/square/
+Accept: application/json
+
+###
+POST {{SquareApi_HostAddress}}/square/
+Content-Type: application/json
+
+{
+    "Color": "rgb(153,123,123)",
+    "X": 2,
+    "Y": 2
+}
+
+###
+
+PUT {{SquareApi_HostAddress}}/square/2
+Content-Type: application/json
+
+{
+    "id": 2,
+   "Color": "rgb(123,123,123)",
+    "X": 1,
+    "Y": 2
+}
+
+###
+
+GET {{SquareApi_HostAddress}}/square/2
+Accept: application/json
+
+###
+
+DELETE {{SquareApi_HostAddress}}/square/3
+
+###
