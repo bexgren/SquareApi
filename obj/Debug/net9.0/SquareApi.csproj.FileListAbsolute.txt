@@ -26,4 +26,8 @@ C:\Users\rebec\OneDrive\Skrivbord\SquareApi\obj\Debug\net9.0\refint\SquareApi.dl
 C:\Users\rebec\OneDrive\Skrivbord\SquareApi\obj\Debug\net9.0\SquareApi.pdb
 C:\Users\rebec\OneDrive\Skrivbord\SquareApi\obj\Debug\net9.0\SquareApi.genruntimeconfig.cache
 C:\Users\rebec\OneDrive\Skrivbord\SquareApi\obj\Debug\net9.0\ref\SquareApi.dll
-C:\Users\rebec\OneDrive\Skrivbord\SquareApi\bin\Debug\net9.0\db.json
+C:\Users\rebec\OneDrive\Skrivbord\SquareApi\bin\Debug\net9.0\squares.json
+C:\Users\rebec\OneDrive\Skrivbord\SquareApi\bin\Debug\net9.0\squares\package-lock.json
+C:\Users\rebec\OneDrive\Skrivbord\SquareApi\bin\Debug\net9.0\squares\package.json
+C:\Users\rebec\OneDrive\Skrivbord\SquareApi\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\rebec\OneDrive\Skrivbord\SquareApi\obj\Debug\net9.0\SquareApi.sourcelink.json

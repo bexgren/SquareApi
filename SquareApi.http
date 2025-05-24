@@ -5,11 +5,11 @@ Accept: application/json
 
 ###
 
-GET {{SquareApi_HostAddress}}/square/
+GET {{SquareApi_HostAddress}}/api/square/
 Accept: application/json
 
 ###
-POST {{SquareApi_HostAddress}}/square/
+POST {{SquareApi_HostAddress}}/api/square/
 Content-Type: application/json
 
 {
@@ -20,11 +20,11 @@ Content-Type: application/json
 
 ###
 
-PUT {{SquareApi_HostAddress}}/square/2
+PUT {{SquareApi_HostAddress}}/api/square/2
 Content-Type: application/json
 
 {
-    "id": 2,
+    "Id": 2,
    "Color": "rgb(123,123,123)",
     "X": 1,
     "Y": 2
@@ -37,6 +37,6 @@ Accept: application/json
 
 ###
 
-DELETE {{SquareApi_HostAddress}}/square/3
+DELETE {{SquareApi_HostAddress}}/api/square/
 
 ###

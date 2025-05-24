@@ -1,11 +1,14 @@
 using SquareApi.Models;
 using SquareApi.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Linq;
+
 
 namespace SquareApi.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class SquareController : ControllerBase
 {
     public SquareController()
@@ -26,7 +29,7 @@ public class SquareController : ControllerBase
     }
     // POST action
     [HttpPost]
-    public ActionResult<Square> Create(Square square)
+    public ActionResult<Square> Create([FromBody]Square square)
     {
         square.Id = SquareService.GetAll().Max(s => s.Id) + 1;
         // This code will save the square and return a result
@@ -53,12 +56,12 @@ public class SquareController : ControllerBase
     [HttpDelete("{id}")]
     public IActionResult Delete(int id)
     {
-        // This code will delete the square and return a result
-        var square = SquareService.Get(id);
-   
-        if (square is null)
+        // This code will delete the square
+        var existingSquare = SquareService.Get(id);
+        if(existingSquare is null)
             return NotFound();
-        
+    
+       
         SquareService.Delete(id);
         
     
