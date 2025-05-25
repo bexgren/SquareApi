@@ -31,31 +31,42 @@ public class SquareController : ControllerBase
     [HttpPost]
     public ActionResult<Square> Create([FromBody]Square square)
     {
-        square.Id = SquareService.GetAll().Max(s => s.Id) + 1;
+        square.id = SquareService.GetAll().Max(s => s.id) + 1;
         // This code will save the square and return a result
         SquareService.Add(square);
-        return CreatedAtAction(nameof(Get), new { id = square.Id }, square);
+        return CreatedAtAction(nameof(Get), new { id = square.id }, square);
     }
     // PUT action
-    [HttpPut("{id}")]
-    public IActionResult Update(int id, Square square)
+    [HttpPut("{square}")]
+    public IActionResult Update(Square square)
     {
+        
         // This code will update the square and return a result
-         if (id != square.Id)
+        if (square.id - 1 != 0)
+        {
             return BadRequest();
-           
-        var existingSquare = SquareService.Get(id);
+        }
+       var prevId = square.id - 1;
+        var existingSquare = SquareService.Get(prevId);
         if(existingSquare is null)
             return NotFound();
-    
+
         SquareService.Update(square);           
     
-        return NoContent();
+       return CreatedAtAction(nameof(Get), new { id = square.id }, square);
+    }
+    // Delete and replace action
+    [HttpPut]
+    public IActionResult DeleteList([FromBody] Square square)
+    {
+        SquareService.DeleteAll(square);
+         return CreatedAtAction(nameof(Get), new { id = square.id }, square);
     }
     // DELETE action
     [HttpDelete("{id}")]
     public IActionResult Delete(int id)
     {
+        Console.WriteLine(id);
         // This code will delete the square
         var existingSquare = SquareService.Get(id);
         if(existingSquare is null)
@@ -63,6 +74,7 @@ public class SquareController : ControllerBase
     
        
         SquareService.Delete(id);
+
         
     
         return NoContent();

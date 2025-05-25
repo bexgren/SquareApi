@@ -3,9 +3,9 @@ namespace SquareApi.Models;
 
 public class Square
 {
-    public int Id { get; set; }
-    public string? Color { get; set; }
-    public int X { get; set; }
-    public int Y { get; set; }
+    public int id { get; set; }
+    public string? color { get; set; }
+    public int x { get; set; }
+    public int y { get; set; }
 
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SquareApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d130e0a10b9ed13206b0d8dd24f642d4dcd0fe5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86966c62d7ed57741662a275aa402e7c259b3905")]
 [assembly: System.Reflection.AssemblyProductAttribute("SquareApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SquareApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

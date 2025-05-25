@@ -20,23 +20,23 @@ Content-Type: application/json
 
 ###
 
-PUT {{SquareApi_HostAddress}}/api/square/2
+PUT {{SquareApi_HostAddress}}/api/square/0
 Content-Type: application/json
 
 {
-    "Id": 2,
-   "Color": "rgb(123,123,123)",
+    "Id": 1,
+    "Color":"rgb(123,123,123)",
     "X": 1,
-    "Y": 2
+    "Y": 1
 }
 
 ###
 
-GET {{SquareApi_HostAddress}}/square/2
+GET {{SquareApi_HostAddress}}/square/1
 Accept: application/json
 
 ###
 
-DELETE {{SquareApi_HostAddress}}/api/square/
+DELETE {{SquareApi_HostAddress}}/api/square/1
 
 ###
