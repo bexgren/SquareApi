@@ -32,7 +32,7 @@ Content-Type: application/json
 
 ###
 
-GET {{SquareApi_HostAddress}}/square/1
+GET {{SquareApi_HostAddress}}api/square/1
 Accept: application/json
 
 ###
