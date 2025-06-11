@@ -66,7 +66,7 @@ http://localhost:5173
 
 ## Folder Structure and Technologies
 
-The project uses **C#/.NET** with **JSON**-file
+The project uses **C#/.NET** with **JSON**-file and **React** for frontend
 
 ```plaintext
 SquareApi/
