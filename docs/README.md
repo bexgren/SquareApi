@@ -55,8 +55,14 @@ http://localhost:5173
 
 ### Run React-application
 
-- Navigate to the square-folder in a new terminal
-- Command: npm run dev
+- Navigate to the squares-folder in a **new** terminal
+  ```bash
+  cd squares
+  ```
+- Run project
+  ```bash
+  npm run dev
+  ```
 
 ## Folder Structure and Technologies
 
