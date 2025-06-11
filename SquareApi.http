@@ -32,11 +32,3 @@ Content-Type: application/json
 
 ###
 
-GET {{SquareApi_HostAddress}}api/square/1
-Accept: application/json
-
-###
-
-DELETE {{SquareApi_HostAddress}}/api/square/1
-
-###
