@@ -1,10 +1,48 @@
-# SquareApi
+# Squares
 
-## Overview
+A web application for generating different colored squares based on predefined rules.
 
-A coding-assignment for Wizardworks.
+## Screenshots
 
-### The Assignment
+If no images are visible - go to README.md in squares
+
+### Start view
+
+![Start view](screenshots/nosquare.png)
+
+### Functionality
+
+![One square](screenshots/onesquare.png)
+![Two squares](screenshots/twosquares.png)
+![Three squares](screenshots/threesquares.png)
+
+## About the project
+
+SquareApi is a small application where users can generate colorful squares according to specific rules. The project was created as an assignment for a possible internship but later used as a learning possibility about C#/.NET.
+
+## Features
+
+- Generate colorful squares
+  - Each square with a different color
+- Display generated results in a visual grid
+  - The visual placement is a predefined pattern
+
+## What I learned
+
+- Exploring C#/.NET for the first time
+- Working with JSON
+- Connecting frontend functionality with application logic
+
+## Technologies
+
+- React
+- JavaScript
+- C#/.NET
+- Tailwind
+- JSON
+- Vite
+
+## Assigment
 
 Create a website that generates a new square with a new color each time you press the button. The squares will place themself in a squarepattern.
 
@@ -15,9 +53,11 @@ Create a website that generates a new square with a new color each time you pres
   #### .NET/C#
   Managing state (store and get data from a _JSON-file_)
 
-## Installation and Setup
+## Getting Started
 
-### Prerequisites
+### Installation
+
+#### Prerequisites
 
 Make sure the following is installed before you start:
 
@@ -25,6 +65,13 @@ Make sure the following is installed before you start:
 - Git
 - A modern browser (Chrome, Firefox)
 - .NET
+
+Make sure you have a certificate for .NET on your computer (powershell-terminal):
+
+```bash
+dotnet dev-certs https
+dotnet dev-certs https --trust
+```
 
 ### Run .NET application
 
@@ -64,9 +111,7 @@ http://localhost:5173
   npm run dev
   ```
 
-## Folder Structure and Technologies
-
-The project uses **C#/.NET** with **JSON**-file and **React** for frontend
+## Folder Structure
 
 ```plaintext
 SquareApi/
