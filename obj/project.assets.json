@@ -124,21 +124,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rebec\\OneDrive\\Skrivbord\\SquareApi\\SquareApi.csproj",
+      "projectUniqueName": "D:\\Rebecka\\kod-projekt\\SquareApi\\SquareApi.csproj",
       "projectName": "SquareApi",
-      "projectPath": "C:\\Users\\rebec\\OneDrive\\Skrivbord\\SquareApi\\SquareApi.csproj",
+      "projectPath": "D:\\Rebecka\\kod-projekt\\SquareApi\\SquareApi.csproj",
       "packagesPath": "C:\\Users\\rebec\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rebec\\OneDrive\\Skrivbord\\SquareApi\\obj\\",
+      "outputPath": "D:\\Rebecka\\kod-projekt\\SquareApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rebec\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\rebec\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

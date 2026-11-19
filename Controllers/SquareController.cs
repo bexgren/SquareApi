@@ -31,25 +31,36 @@ public class SquareController : ControllerBase
     [HttpPost]
     public ActionResult<Square> Create([FromBody]Square square)
     {
-        square.id = SquareService.GetAll().Max(s => s.id) + 1;
+        square.Id = SquareService.GetAll().Max(s => s.Id) + 1;
         SquareService.Add(square);
-        return CreatedAtAction(nameof(Get), new { id = square.id }, square);
+        return CreatedAtAction(nameof(Get), new { id = square.Id }, square);
     }
-    // PUT action
+    // PUT action - change first square
     [HttpPut("{square}")]
     public IActionResult Update(Square square)
     {
-        if (square.id - 1 != 0)
+        if (square.Id - 1 != 0)
         {
             return BadRequest();
         }
-       var prevId = square.id - 1;
+       var prevId = square.Id - 1;
         var existingSquare = SquareService.Get(prevId);
         if(existingSquare is null)
             return NotFound();
 
         SquareService.Update(square);           
     
-       return CreatedAtAction(nameof(Get), new { id = square.id }, square);
+       return CreatedAtAction(nameof(Get), new { id = square.Id }, square);
+    }
+      [HttpPut("deleteall/{square}")]
+    public IActionResult DeleteAll(Square square)
+    {
+        if (square.Id + 1 > 1)
+        {
+            return BadRequest();
+        }
+        SquareService.DeleteAll(square);
+    
+       return CreatedAtAction(nameof(Get), new { id = square.Id }, square);
     }
 }

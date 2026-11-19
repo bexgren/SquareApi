@@ -15,7 +15,7 @@ public static class SquareService
 
     public static List<Square> GetAll() => Squares;
 
-    public static Square? Get(int id) => Squares.FirstOrDefault(s => s.id == id);
+    public static Square? Get(int id) => Squares.FirstOrDefault(s => s.Id == id);
 
     public static void Add( Square square)
     {
@@ -37,7 +37,7 @@ public static class SquareService
     public static void DeleteAll(Square square)
     {
         var count = Squares.Count;
-        Squares.RemoveRange(1, count);
+        Squares.RemoveRange(2, count);
         Squares[0] = square;
         JsonFileHelper.WriteToJsonFile(Squares);
     }
