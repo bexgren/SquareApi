@@ -34,11 +34,10 @@ public static class SquareService
         Squares[0] = square;
         JsonFileHelper.WriteToJsonFile(Squares);
     }
-    public static void DeleteAll(Square square)
-    {
-        var count = Squares.Count;
-        Squares.RemoveRange(2, count);
-        Squares[0] = square;
-        JsonFileHelper.WriteToJsonFile(Squares);
-    }
+  public static void DeleteAll(Square square)
+{
+    Squares.Clear();
+    Squares.Add(square);
+    JsonFileHelper.WriteToJsonFile(Squares);
+}
 }

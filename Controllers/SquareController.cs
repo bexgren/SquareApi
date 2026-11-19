@@ -52,15 +52,15 @@ public class SquareController : ControllerBase
     
        return CreatedAtAction(nameof(Get), new { id = square.Id }, square);
     }
-      [HttpPut("deleteall/{square}")]
-    public IActionResult DeleteAll(Square square)
+      [HttpPut("deleteall")]
+    public IActionResult DeleteAll([FromBody]Square square)
     {
-        if (square.Id + 1 > 1)
+        var incomingSquare = square;
+        if(square.Id > 0)
         {
             return BadRequest();
         }
         SquareService.DeleteAll(square);
-    
        return CreatedAtAction(nameof(Get), new { id = square.Id }, square);
     }
 }
